@@ -56,7 +56,7 @@
     <ul>
       <li>On iPhone, open Setup and choose <strong>Health Access</strong> to allow or review Apple Health access.</li>
       <li>On Apple Watch, open Setup, then <strong>Health Access</strong>. Finish the Apple authorization sheet with its bottom Allow action.</li>
-      <li>Heart rate is the only required Heart Flow input. Optional age, recovery, movement, workout, sleep, breathing, and oxygen context may improve personal-relative context but cannot block a result.</li>
+      <li>Heart rate is the only required Heart Flow input. Optional age, recovery, movement, workout, sleep, breathing, oxygen, and sleeping wrist-temperature context may improve personal-relative context but cannot block a result.</li>
       <li>If access or recent data is unavailable, Rolling Heart shows a truthful limited or no-recent-data state instead of inventing a reading.</li>
     </ul>
 
@@ -64,6 +64,7 @@
     <ul>
       <li><strong>Heart Flow</strong> is a derived personal-wellness visualization. It is not a factual Health measurement.</li>
       <li><strong>Heart Data</strong> keeps factual readings, timestamps, availability, and Watch Readiness separate from Heart Flow.</li>
+      <li><strong>Recovery Reserve</strong> and <strong>Sleep Support</strong> are personal-relative derived context, not factual Health measurements or medical targets.</li>
       <li>Dashboard, Heart Lens, and Heart Data each have their own range setting. Changing one does not change the others.</li>
       <li>If iPhone Heart Flow appears stuck after Health data changes, open Setup and use <strong>Rebuild Local Heart Flow Data</strong>.</li>
     </ul>
@@ -75,15 +76,24 @@
       <li>If Today asks you to review Health access, open Watch Setup &gt; Health Access.</li>
       <li>If paired factual fallback data is stale, open Watch Setup &gt; Data &amp; iPhone Sync or use <strong>Refresh Apple Watch Data</strong> on iPhone.</li>
       <li>Open Complications on Apple Watch to explore every available preview. Some options require Lifetime Premium only when configured on an actual watch face.</li>
+      <li>Heart Flow Wide Graph and Side Panel can use the derived Heart Flow trace or factual Heart Rate graph geometry while keeping the displayed facts separate.</li>
       <li>WidgetKit refresh timing is controlled by watchOS. A complication may remain honestly historical until the system grants another update opportunity.</li>
     </ul>
 
-    <h2>Lifetime Premium</h2>
-    <p>Lifetime Premium is one optional non-consumable purchase. It adds longer ranges, Parchment, Signal, and Electric themes, deeper Heart Flow Graph and Lab customization, longer Watch Today and Heart Flow complication ranges, and expanded Heart Rate complication options. It does not change Health access, factual readings, privacy, or medical posture.</p>
+    <h2>Watch Face Gallery</h2>
     <ul>
-      <li>To restore an existing purchase, open iPhone Setup &gt; Lifetime Premium and choose <strong>Restore Purchases</strong>.</li>
-      <li>After purchase or restore, open Rolling Heart on iPhone briefly so verified access can synchronize privately to Apple Watch.</li>
-      <li>If the Watch remains locked, confirm both apps are installed and nearby, then reopen Lifetime Premium on Apple Watch.</li>
+      <li>On iPhone, open Setup &gt; Apple Watch &gt; <strong>Watch Face Gallery</strong> to browse all nine bundled ready-made faces.</li>
+      <li>Modular Heart Flow, Stripes, and California are free. The remaining six faces require verified Lifetime Premium when you choose <strong>Add to Apple Watch</strong>.</li>
+      <li>Adding a face opens Apple's paired-Watch system sheet and requires a compatible paired Apple Watch. Ultra-only faces are labeled and may not install on other models.</li>
+      <li>Installed faces remain managed by watchOS. Losing Premium does not remove a face already added, while Rolling Heart complications continue to enforce their current free-safe presentation.</li>
+    </ul>
+
+    <h2>Lifetime Premium</h2>
+    <p>Lifetime Premium is one optional non-consumable purchase. It adds longer ranges, Parchment, Signal, and Electric themes, deeper Heart Flow Graph and Lab customization, longer Watch Today and Heart Flow complication ranges, expanded Heart Rate complication options, four Signal Orbit complications, and six additional ready-made Watch faces. It does not change Health access, factual readings, privacy, or medical posture.</p>
+    <ul>
+      <li>Purchase or Restore Purchases is available from Lifetime Premium on iPhone or Apple Watch.</li>
+      <li>After purchase or restore, open Rolling Heart on both devices so verified access can synchronize privately between the paired apps.</li>
+      <li>If either device remains locked, confirm both apps are installed and nearby, then reopen Lifetime Premium on that device.</li>
     </ul>
 
     <h2>Appearance and Accessibility</h2>
@@ -98,6 +108,7 @@
     <h2>Contact</h2>
     <p>Contact Brent Andrew O. Chua for Rolling Heart support at <a href="mailto:BrentChua@icloud.com">BrentChua@icloud.com</a>. Please do not include Health data unless you intentionally want it reviewed.</p>
 
+    <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a></p>
     <p><a href="index.html">Return to Rolling Heart</a></p>
   </main>
 </body>
